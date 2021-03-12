@@ -1,0 +1,174 @@
+// Tablets & Smaller Screens
+
+@media only screen and (max-width: 800px) {
+  // Background picture height
+  #header {
+    height: 30rem;
+
+    // Header Home Design
+
+    .header-home {
+      padding-top: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  //Header
+
+  #header, #header-inner {
+    background: url("../img/showcase.jpg") no-repeat 60% 30% / cover;
+    height: 10rem;
+    border-bottom: 3px solid $main-color;
+
+    .header-home {
+      display: none;
+    }
+
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      ul {
+        li {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  // Specialize
+
+  .card-container {
+    grid-template-columns: 1fr;
+
+    .card {
+      padding-bottom: 2rem;
+
+      h3 {
+        padding-top: .5rem;
+      }
+    }
+  }
+
+  // Stat Section
+
+  .stat-container {
+    grid-template-columns: 1fr;
+
+    .box {
+      padding: .5rem 0;
+    }
+  }
+
+  // Process
+
+  .process {
+    grid-template-columns: 1fr;
+  }
+
+  // Footer 
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // About
+
+  .bio-container {
+    grid-template-areas: 
+      'bioimg'
+      'bioinfo'
+      'award1'
+      'award2'
+      'award3';
+  }
+
+  // Logos
+
+  #logos {
+    display: none;
+  }
+
+  // Testimonials
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  // Work Section
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  // Contact Me
+
+  .text-fields {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'name'
+      'email'
+      'subject'
+      'phone'
+      'message';
+  }
+
+  // Contact Information
+
+  #contact-info {
+
+    .info-container {
+      grid-template-columns: 1fr;
+
+      div {
+        border-bottom: 1px solid #555;
+        margin-bottom: .8rem;
+        padding-bottom: .8rem;
+
+        &:last-child {
+          border: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  // Next Project Part
+
+  #next-project {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Iphone 5/SE Home Page
+
+// Header Home
+
+.header-home {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+
+// Footer
+#footer {
+  i {
+    margin-right: .5rem;
+  }
+
+  p {
+    margin-bottom: .5rem;
+    line-height: 1.3;
+  }
+}
